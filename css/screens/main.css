@@ -39,6 +39,10 @@ video {
   margin-bottom: 20px;
 }
 
+.logo-box__icn-txt {
+  display: flex;
+}
+
 .logo-icn {
   width: 130px;
   height: 130px;
@@ -46,7 +50,8 @@ video {
 
 .logo-txt {
   font-family: "SEBANG_Gothic_Bold";
-  padding-left: 30px;
+  padding-left: 10px;
+  padding-top: 25px;
   font-size: 100px;
 }
 
