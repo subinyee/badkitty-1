@@ -45,6 +45,7 @@
 a {
   text-decoration: none;
   transition: color 0.2s ease-in-out;
+  color: inherit;
 }
 
 a:hover {
