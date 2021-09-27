@@ -5,7 +5,7 @@
 @import "components/nav.css";
 
 /* Screens */
-@import "screens/main.css";
+@import "screens/door.css";
 @import "screens/regions.css";
 
 /* font */
@@ -25,18 +25,29 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: abster;
+  src: url(font/abster-webfont.woff) format("woff");
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 a {
-  color: inherit;
   text-decoration: none;
-  transition: color 0.2s ease-out;
+  transition: color 0.2s ease-in-out;
 }
 
 a:hover {
-  color: var(--hover-text);
+  color: darkslategray;
+  font-weight: bold;
 }
