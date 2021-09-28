@@ -1,6 +1,6 @@
 .background {
   padding-top: 100px;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -16,6 +16,7 @@
   top: 0px;
 }
 
+/*시,도 구분 문구*/
 .regions-header {
   text-align: center;
   margin-bottom: 20px;
@@ -49,6 +50,7 @@
   justify-content: center;
 }
 
+/*지역 circle (img, span을 포함)*/
 .regions-cover__row-circle {
   display: flex;
   align-items: center;
@@ -62,6 +64,7 @@
   transition: background-color 0.2s ease-in-out;
 }
 
+/*지역 circle안에 들어가는 img*/
 .regions-cover__row-circle img {
   position: absolute;
   top: 0;
@@ -72,12 +75,63 @@
   opacity: 0.5;
 }
 
+/*지역 circle에 hover 하면 색 변경*/
 .regions-cover__row-circle:hover {
   background-color: var(--hover-bg);
   color: var(--main-color);
 }
 
-.regions-cover__row-circle span {
+/*지역 circle안에 들어가는 span*/
+.original-span {
+  z-index: 1;
+  font-family: "SEBANG_Gothic_Bold";
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgb(53, 53, 53);
+}
+
+/*북도,남도 내용물 가운데정렬*/
+#circle-section1,
+#circle-section2,
+#circle-section3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*북도/남도 나누기 -- show1:북도 /show2:남도 / hide: 원도*/
+.circle-section__span-show1 {
+  position: absolute;
+  top: 65px;
+  font-family: "SEBANG_Gothic_Bold";
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgb(53, 53, 53);
+}
+
+/*circle 내의 divider*/
+.circle-section__divider {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 150px;
+  height: 2px;
+  border-style: none;
+  box-shadow: 2px 2px 2px rgb(53, 53, 53);
+}
+
+.circle-section__span-show2 {
+  position: absolute;
+  bottom: 60px;
+  font-family: "SEBANG_Gothic_Bold";
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgb(53, 53, 53);
+}
+
+/*마우스를 올리면 사라질 충청,전라,경상도*/
+.circle-section__span-hide1,
+.circle-section__span-hide2,
+.circle-section__span-hide3 {
   position: absolute;
   font-family: "SEBANG_Gothic_Bold";
   font-size: 28px;
@@ -85,6 +139,7 @@
   text-shadow: 2px 2px 2px rgb(53, 53, 53);
 }
 
+/*화면 중간 시/도 구분*/
 .divider {
   width: 200px;
   height: 3px;
