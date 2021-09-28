@@ -1,35 +1,39 @@
-body {
-  height: 100vh;
-  width: 100vw;
-}
-
 .background {
-  z-index: auto;
-  height: 100vh;
+  padding-top: 100px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   background-size: cover;
-  background-color: var(--bg-color);
   position: relative;
 }
 
 .regions-container {
+  padding-top: 100px;
   position: absolute;
+  width: 60%;
+  height: 100%;
   top: 0px;
 }
 
 .regions-header {
-  padding-top: 280px;
   text-align: center;
   margin-bottom: 20px;
-}
-.regions-header span {
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.8);
+  font-family: "SEBANG_Gothic_Bold";
 }
 
 .regions-header h3 {
-  font-weight: 530;
+  color: var(--main-color);
+  font-weight: bolder;
   font-size: 28px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+  text-shadow: 1.5px 1.5px 1.5px gray;
+}
+
+.regions-header span {
+  font-size: 14px;
+  color: rgba(47, 79, 79, 0.671);
+  text-shadow: 0.5px 0.5px 0.5px gray;
 }
 
 .reagions-cover {
@@ -68,14 +72,17 @@ body {
   opacity: 0.5;
 }
 
+.regions-cover__row-circle:hover {
+  background-color: var(--hover-bg);
+  color: var(--main-color);
+}
+
 .regions-cover__row-circle span {
   position: absolute;
   font-family: "SEBANG_Gothic_Bold";
   font-size: 28px;
-}
-
-.regions-cover__row-circle:hover {
-  background-color: var(--hover-bg);
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgb(53, 53, 53);
 }
 
 .divider {
