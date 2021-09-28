@@ -7,6 +7,7 @@
 /* Screens */
 @import "screens/door.css";
 @import "screens/regions.css";
+@import "screens/cat-list.css";
 
 /* font */
 @font-face {
