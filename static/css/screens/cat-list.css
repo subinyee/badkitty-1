@@ -8,6 +8,14 @@
 
 .card {
   width: 250px;
+  height: 250px;
   background-color: white;
   box-shadow: 2px 2px 2px gray;
+  overflow: hidden;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 14px;
+  object-fit: contain;
 }

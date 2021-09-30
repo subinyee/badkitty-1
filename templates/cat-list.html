@@ -46,7 +46,7 @@
 <body>
 
     <!-- Nav-bar -->
-    <div class="nav-bar">
+    <nav class="nav-bar">
         <div class="nav-bar-box">
             <ul class="nav-bar__list">
                 <li><a href="regions.html">HOME</a></li>
@@ -58,7 +58,7 @@
                 <li><a href="#">나와 맞는 고양이 찾기</a></li>
             </ul>
         </div>
-    </div>
+    </nav>
 
     <!-- Menu-bar -->
     <div class="menu-bar">
@@ -113,24 +113,34 @@
     
     <div class="cards-box">
         <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="https://media.istockphoto.com/photos/european-short-haired-cat-picture-id1072769156?k=20&m=1072769156&s=612x612&w=0&h=k6eFXtE7bpEmR2ns5p3qe_KYh098CVLMz4iKm5OuO6Y=" alt="Card image cap">
+            <img class="card-img-top" src="https://cdn.britannica.com/q:60/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg" alt="Card image cap">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">공고번호가 들어올 자리 ^^</p>
             </div>
           </div>
     </div>
    
     <script>
+        //api 데이터에서 도, 시 이름 따오기 -> 미완성//
+        function showDoSinames() {
+            $.ajax({
+                type: "GET",
+                url: "/do-si-name",
+                data: {},
+                success: function (response) {
+                    let articles = response['all_articles']
+                }
+
 
         //첫 화면에 시 이름 안보이게//
         $('.menu-bar-list').hide();
 
         //도 이름을 클릭하면 시 이름이 나타나게//
         $('.do-name').click(function() {
-            $('.menu-bar-list').each(function (i) {
+            $('.menu-bar-list').each(function (i) { //each(function (i) ????)
                 if ($(this).css('display') == 'block') {
                     //$(this).hide();
-                    $(this).slideUp('fast');
+                    $(this).slideUp('fast');  //
                 }
             });
             //$(this).next().show();

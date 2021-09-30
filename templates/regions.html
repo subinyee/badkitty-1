@@ -26,6 +26,9 @@
             integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
             crossorigin="anonymous"> 
     </script>
+    <!-- jQuery -->
+    <script src="jquery-3.4.1.min.js"></script>
+
 </head>
 
 
@@ -44,7 +47,7 @@
 <body>
 
     <!-- Nav-bar -->
-    <div class="nav-bar">
+    <nav class="nav-bar">
         <div class="nav-bar-box">
             <ul class="nav-bar__list">
                 <li><a href="regions.html">HOME</a></li>
@@ -56,7 +59,7 @@
                 <li><a href="#">나와 맞는 고양이 찾기</a></li>
             </ul>
         </div>
-    </div>
+    </nav>
 
     <!-- 컨텐츠 -->
     <div class="background">
@@ -184,13 +187,15 @@
 
     <script>
     
-        $("#circle-section1").hide();
+        /*$("#circle-section1").hide();
         $("#circle-section2").hide();
-        $("#circle-section3").hide();
+        $("#circle-section3").hide();*/
     </script>
     
-    <script type="text/javascript"> //JS hover event (남도,북도)//
-        
+    <script>
+ //JS hover event (남도,북도)//
+        $('#circle-section1,#circle-section2,#circle-section3').hide();       
+
         //마우스를 올리면 원도가 사라지고 북도,남도 show//
         $("#circle1").mouseover(function(){
             $("#circle-section__span-hide1").hide();
@@ -219,7 +224,19 @@
             $("#circle-section3").hide();
             });
 
-            
+            //주석처리된 것 : 연습중//
+            /*
+
+            //도 이름을 클릭하면 시 이름이 나타나게//
+            $(".original-span").mouseover(function() {
+                $("div:[id*='section'").each(function (i) { //each(function (i) ????)
+                    if ($(this).css("display") == 'none') {
+                        $(this).show();
+                        //$(this).slideUp('fast');
+                    }
+                });
+                $(this).next().slideDown('fast');
+        });*/
     </script>
 
 </body>
