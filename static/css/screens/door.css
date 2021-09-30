@@ -55,7 +55,7 @@
 }
 
 .container .hero .logo {
-  background-image: url("/logo2.png");
+  background-image: url("/static/logo2.png");
   width: 500px;
   height: 200px;
   margin-bottom: 10px;

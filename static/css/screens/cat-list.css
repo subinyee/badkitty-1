@@ -1,0 +1,13 @@
+.cards-box {
+  position: absolute;
+  top: 120px;
+  left: 250px;
+  width: 76%;
+  height: 100%;
+}
+
+.card {
+  width: 250px;
+  background-color: white;
+  box-shadow: 2px 2px 2px gray;
+}
