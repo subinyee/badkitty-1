@@ -1,21 +1,33 @@
 .cards-box {
+  box-sizing: border-box;
+  display: flex;
   position: absolute;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   top: 120px;
   left: 250px;
-  width: 76%;
+  width: 80%;
   height: 100%;
 }
 
 .card {
   width: 250px;
   height: 250px;
+  padding: 5px;
   background-color: white;
   box-shadow: 2px 2px 2px gray;
   overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  height: 210px;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
 .card-text {
   text-align: center;
   font-size: 14px;
-  object-fit: contain;
 }

@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>데려갈꼬냥? - 지역별 고양이</title>
+    <title>데려갈꼬냥? | 지역별 고양이</title>
 
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
               integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
               crossorigin="anonymous">
@@ -62,7 +62,7 @@
 
     <!-- Menu-bar -->
     <div class="menu-bar">
-        <img src="/static/logo.png" alt="로고입니다.">
+        <img src="/static/logo.png" alt="로고입니다." onclick="location.href='regions.html'">
 
         <li class="menu-bar-box">
             <span class="do-name">도 이름</span>
@@ -85,7 +85,6 @@
                 </li>
 
             </ul>
-            
         </li>
 
         <li class="menu-bar-box">
@@ -104,7 +103,6 @@
                 <li class="si-name" onclick="location.href='#'">
                     - 시 이름
                 </li>
-
             </ul>
         </li>
 
@@ -112,17 +110,55 @@
     </div>
     
     <div class="cards-box">
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem;" onclick="location.href='#'">
             <img class="card-img-top" src="https://cdn.britannica.com/q:60/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">공고번호가 들어올 자리 ^^</p>
-            </div>
-          </div>
+            <p class="card-text">공고번호가 들어올 자리 ^^</p>
+        </div>
+        <div class="card" style="width: 18rem;" onclick="location.href='#'">
+            <img class="card-img-top" src="https://cdn.britannica.com/q:60/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg" alt="Card image cap">
+            <p class="card-text">공고번호가 들어올 자리 ^^</p>
+        </div>
+        <div class="card" style="width: 18rem;" onclick="location.href='#'">
+            <img class="card-img-top" src="https://cdn.britannica.com/q:60/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg" alt="Card image cap">
+            <p class="card-text">공고번호가 들어올 자리 ^^</p>
+        </div>
+        <div class="card" style="width: 18rem;" onclick="location.href='#'">
+            <img class="card-img-top" src="https://cdn.britannica.com/q:60/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg" alt="Card image cap">
+            <p class="card-text">공고번호가 들어올 자리 ^^</p>
+        </div>
+        <div class="card" style="width: 18rem;" onclick="location.href='#'">
+            <img class="card-img-top" src="https://cdn.britannica.com/q:60/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg" alt="Card image cap">
+            <p class="card-text">공고번호가 들어올 자리 ^^</p>
+        </div>
+        <div class="card" style="width: 18rem;" onclick="location.href='#'">
+            <img class="card-img-top" src="https://cdn.britannica.com/q:60/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg" alt="Card image cap">
+            <p class="card-text">공고번호가 들어올 자리 ^^</p>
+        </div>
+        <div class="card" style="width: 18rem;" onclick="location.href='#'">
+            <img class="card-img-top" src="https://cdn.britannica.com/q:60/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg" alt="Card image cap">
+            <p class="card-text">공고번호가 들어올 자리 ^^</p>
+        </div>
+        <div class="card" style="width: 18rem;" onclick="location.href='#'">
+            <img class="card-img-top" src="https://cdn.britannica.com/q:60/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg" alt="Card image cap">
+            <p class="card-text">공고번호가 들어올 자리 ^^</p>
+        </div>
+        <div class="card" style="width: 18rem;" onclick="location.href='#'">
+            <img class="card-img-top" src="https://cdn.britannica.com/q:60/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg" alt="Card image cap">
+            <p class="card-text">공고번호가 들어올 자리 ^^</p>
+        </div>
+
+
+
+
+
+
+
+
     </div>
    
     <script>
         //api 데이터에서 도, 시 이름 따오기 -> 미완성//
-        function showDoSinames() {
+        /* function showDoSinames() {
             $.ajax({
                 type: "GET",
                 url: "/do-si-name",
@@ -130,6 +166,7 @@
                 success: function (response) {
                     let articles = response['all_articles']
                 }
+            })}; */
 
 
         //첫 화면에 시 이름 안보이게//

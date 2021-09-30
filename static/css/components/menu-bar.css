@@ -1,3 +1,4 @@
+/* 메뉴바 - 이름 길이에 따라 늘어남 */
 .menu-bar {
   z-index: 3;
   position: fixed;
@@ -12,14 +13,17 @@
   padding-bottom: 40px;
 }
 
+/* 로고 이미지 */
 .menu-bar img {
   position: absolute;
   width: 180px;
   height: 50px;
   top: 40px;
   left: 7px;
+  cursor: pointer;
 }
 
+/* 도 이름+시 이름 1set */
 .menu-bar-box {
   padding-left: 10px;
   margin-bottom: 30px;
@@ -33,6 +37,7 @@
   cursor: pointer;
 }
 
+/* 시 이름 1set */
 .menu-bar-list {
   margin-top: 20px;
 }
@@ -40,4 +45,10 @@
 .si-name {
   margin-top: 10px;
   cursor: pointer;
+}
+
+/* 시 이름 hover시 컬러와 두께 변경 */
+.si-name:hover {
+  color: var(--main-color);
+  font-weight: bold;
 }
